@@ -41,8 +41,9 @@ func (nc *platformNotification) AddExtra(key string, value interface{}) {
 type AndroidNotification struct {
 	platformNotification
 
-	Title     string `json:"title,omitempty"`
-	BuilderId int    `json:"builder_id,omitempty"`
+	Title       string `json:"title,omitempty"`
+	BuilderId   int    `json:"builder_id,omitempty"`
+	UrlActivity string `json:"uri_activity,omitempty"`
 }
 
 func NewAndroidNotification(alert string) *AndroidNotification {
@@ -56,7 +57,7 @@ type IosNotification struct {
 	platformNotification
 
 	Sound            string `json:"sound,omitempty"`
-	Badge            string    `json:"badge,omitempty"`
+	Badge            string `json:"badge,omitempty"`
 	ContentAvailable bool   `json:"content-available,omitempty"`
 	Category         string `json:"category,omitempty"`
 }
