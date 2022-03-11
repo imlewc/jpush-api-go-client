@@ -44,6 +44,7 @@ type AndroidNotification struct {
 	Title       string `json:"title,omitempty"`
 	BuilderId   int    `json:"builder_id,omitempty"`
 	UrlActivity string `json:"uri_activity,omitempty"`
+	ChannelId   string `json:"channel_id,omitempty"`
 }
 
 func NewAndroidNotification(alert string) *AndroidNotification {
