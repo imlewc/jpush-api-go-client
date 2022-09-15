@@ -14,7 +14,7 @@ JPush API Go Client
 使用 go get 安装，无任何第三方依赖：
 
 ```sh
-go get github.com/xinpianchang/jpush-api-go-client
+go get github.com/imlewc/jpush-api-go-client
 ```
 
 # 使用方法
@@ -22,7 +22,7 @@ go get github.com/xinpianchang/jpush-api-go-client
 ## 1. 创建 JPushClient
 
 ```go
-import "github.com/xinpianchang/jpush-api-go-client"
+import "github.com/imlewc/jpush-api-go-client"
 
 const (
     appKey = ""
@@ -37,7 +37,7 @@ jclient := jpush.NewJPushClient(appKey, masterSecret)
 与推送有关的数据结构都在 push 包里
 
 ```go
-import "github.com/xinpianchang/jpush-api-go-client/push"
+import "github.com/imlewc/jpush-api-go-client/push"
 ```
 
 ### 2.1 创建 Platform 对象

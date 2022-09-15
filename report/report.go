@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/xinpianchang/jpush-api-go-client/common"
+	"github.com/imlewc/jpush-api-go-client/common"
 )
 
 type ReceivedReportNode struct {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/xinpianchang/jpush-api-go-client/common"
+	"github.com/imlewc/jpush-api-go-client/common"
 )
 
 type QueryDeviceResult struct {
@@ -29,7 +29,7 @@ func (dir *QueryDeviceResult) String() string {
 		dir.Tags, dir.Alias, dir.ResponseBase.String())
 }
 
-/////////////////////////////////////////////////////
+// ///////////////////////////////////////////////////
 
 type tags struct {
 	Add    []string `json:"add,omitempty"`

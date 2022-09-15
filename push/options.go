@@ -1,6 +1,6 @@
 package push
 
-import "github.com/xinpianchang/jpush-api-go-client/common"
+import "github.com/imlewc/jpush-api-go-client/common"
 
 // 推送可选项。
 type Options struct {

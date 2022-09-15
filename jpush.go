@@ -5,11 +5,11 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/xinpianchang/jpush-api-go-client/common"
-	"github.com/xinpianchang/jpush-api-go-client/device"
-	"github.com/xinpianchang/jpush-api-go-client/httplib"
-	"github.com/xinpianchang/jpush-api-go-client/push"
-	"github.com/xinpianchang/jpush-api-go-client/report"
+	"github.com/imlewc/jpush-api-go-client/common"
+	"github.com/imlewc/jpush-api-go-client/device"
+	"github.com/imlewc/jpush-api-go-client/httplib"
+	"github.com/imlewc/jpush-api-go-client/push"
+	"github.com/imlewc/jpush-api-go-client/report"
 )
 
 // JPush 的 Golang 推送客户端
@@ -163,7 +163,7 @@ func (jpc *JPushClient) GetReceivedReport(msgIds []uint64) (*report.ReceiveRepor
 	return result, err
 }
 
-////////////////////////////////////////////////////////////////////////////////
+// //////////////////////////////////////////////////////////////////////////////
 
 func addPlatformsToParams(platforms []string) map[string]interface{} {
 	if platforms == nil {

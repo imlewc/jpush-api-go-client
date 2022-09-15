@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/xinpianchang/jpush-api-go-client/device"
-	"github.com/xinpianchang/jpush-api-go-client/push"
+	"github.com/imlewc/jpush-api-go-client/device"
+	"github.com/imlewc/jpush-api-go-client/push"
 )
 
 const (
@@ -28,7 +28,7 @@ func showResultOrError(method string, result interface{}, err error) {
 	}
 }
 
-///////////////////// Push /////////////////////
+// /////////////////// Push /////////////////////
 
 func test_Push(t *testing.T) {
 	// platform 对象
@@ -108,7 +108,7 @@ func test_Push(t *testing.T) {
 	showResultOrError("PushValidate", result, err)
 }
 
-///////////////////// Device /////////////////////
+// /////////////////// Device /////////////////////
 
 func test_QueryDevice(t *testing.T) {
 	registrationId := "123456"
@@ -125,7 +125,7 @@ func test_UpdateDevice(t *testing.T) {
 	showResultOrError("UpdateDevice", result, err)
 }
 
-///////////////////// Tags /////////////////////
+// /////////////////// Tags /////////////////////
 
 func test_GetTags(t *testing.T) {
 	result, err := client.GetTags()
@@ -156,7 +156,7 @@ func test_DeleteTag(t *testing.T) {
 	showResultOrError("DeleteTag", result, err)
 }
 
-///////////////////// Alias /////////////////////
+// /////////////////// Alias /////////////////////
 
 func test_GetAliasUsers(t *testing.T) {
 	result, err := client.GetAliasUsers("alias1", nil)
@@ -174,7 +174,7 @@ func test_DeleteAlias(t *testing.T) {
 	showResultOrError("DeleteAlias", result, err)
 }
 
-///////////////////// Report /////////////////////
+// /////////////////// Report /////////////////////
 
 func test_GetReceivedReport(t *testing.T) {
 	msgIds := []uint64{1613113584, 1229760629}
